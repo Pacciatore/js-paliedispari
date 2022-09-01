@@ -26,7 +26,7 @@ do {
     console.log('Numero dell\'utente: ' + userNumber);
 } while (userNumber < 1 || userNumber > 5);
 
-const pcNumber = pcRandomNumber();
+const pcNumber = pcRandomNumber(1, 5);
 console.log('Numero del computer: ' + pcNumber);
 
 const sum = userNumber + pcNumber;
@@ -55,8 +55,8 @@ function checkPalindroma(text) {
     return isEqual;
 }
 
-function pcRandomNumber() {
-    const pcNumber = Math.floor(Math.random() * 5) + 1;
+function pcRandomNumber(min, max) {
+    const pcNumber = Math.floor(Math.random() * max) + min;
     return pcNumber;
 }
 
