@@ -9,11 +9,11 @@ let sumResultOdd = '';
 // const isPalindroma = checkPalindroma(word);
 
 
-// if (isPalindroma) {
-//     alert('La parola è palindroma!');
-// } else {
-//     alert('La parola non è palindroma!');
-// }
+if (isPalindroma) {
+    alert('La parola è palindroma!');
+} else {
+    alert('La parola non è palindroma!');
+}
 
 do {
     userChoice = prompt('pari o dispari?')
